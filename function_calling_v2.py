@@ -45,7 +45,7 @@ def ask_with_guaranteed_functions(
             print(f"✅ {drug}: {tier_result['aware_tier']} tier")
 
     # STEP 2: Build enriched prompt with function results baked in
-    lang_instruction = "Reply in Tamil language (தமிழ்)." if language == "தமிழ்" else "Reply in English."
+    lang_instruction = "Reply in English."
 
     sensitive_drugs = [d for d, s in sensitivities.items() if s == "S"]
     resistant_drugs = [d for d, s in sensitivities.items() if s == "R"]
